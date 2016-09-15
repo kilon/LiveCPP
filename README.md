@@ -1,16 +1,22 @@
 # LiveCPP
 Testing a live coding technique using DLLs (Linux)
+Follow the steps
 
-
-use this command to compile the library
+1) use this command to compile the library
 ```
 g++ -fPIC -shared myclass.cc -o myclass.so
 ```
 
-use this command to compile the executable
+2) use this command to compile the executable
 
 ```
 g++ class_user.cc -ldl -o class_user  
 ```
 
-once you compile both , execute class_user, edit myclass.h or/and myclass.cc , recompile the library , choose "y" in the prompt and voila the code is updated live, without exiting the executable.
+3) execute class_user
+
+4) open myclass.cc and edit the string at line 21
+
+5) recompile the library
+
+6) type "y" in the prompt of the executable and the new string should appear 
