@@ -18,7 +18,7 @@ extern "C" void destroy_object(MyClass* object)
 
 MyClass::MyClass()
 {
-  x = "hello world and goodbye!!!\n Yeahh\n Live Coding Works in C++\n";
+  x = "hello world";
 }
 
 void MyClass::DoSomething()
@@ -27,5 +27,3 @@ void MyClass::DoSomething()
   cout << x << endl;
 
 }
-
-
